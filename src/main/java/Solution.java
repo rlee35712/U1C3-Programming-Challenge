@@ -8,20 +8,22 @@ public class Solution {
     private int idNumber;
 
     public Solution(String model, int id) {
-        //implement code here
+        calcModel = model; 
+        idNumber = id; 
     }
 
     public Solution(int id) {
-        //implement code here
+        calcModel = "TI-84"; 
     }
 
     public String getCalcModel() {
-        //implement code here
+        calc.getCalcModel();  
+        calc.getIdNumber(); 
         return "";
     }
 
     public void setCalcModel(String newModel) {
-        //implement code here
+        newModel = calcModel; 
     }
 
     public int getIdNumber() {
@@ -30,56 +32,56 @@ public class Solution {
     }
 
     public void setIdNumber(int newId) {
-        //implement code here
+        newId = idNumber; 
     }
 
     public void incrementId() {
-        //implement code here
+        newId += 1; 
     }
 
     public double add(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double added; 
+        add = num1 + num2; 
     }
 
     public double subtract(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double subtracted; 
+        subtracted = num1 - num2; 
+        return subtracted; 
     }
 
     public double multiply(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double multiplied; 
+        multiplied = num1 * num2; 
+        return multiplied; 
     }
 
     public int quotient(int num1, int num2) {
-        //implement code here
-        return 0;
+        int divided; 
+        divided = num1 / num2; 
+        return divided; 
     }
 
     public int remainder(int num1, int num2) {
-        //implement code here
-        return 0;
+        int remain; 
+        remain = num1 % num2; 
+        return remain; 
     }
 
     public String divisionResult(int num1, int num2) {
-        //implement code here
-        return "";
+        return divided + " R " + remain; 
     }
 
     public String coordinatePair(int x, int y) {
-        //implement code here
-        return "";
+        return "(" + x + ", " + y + ")"; 
     }
 
     public int average(int num1, int num2) {
-        //implement code here
-        return 0;
+        return (num1 + num2) / 2; 
     }
 
     public String info() {
-        //implement code here
-        return "";
+        return "This calculator is a model " + newModel + " with id " + newId; 
     }
 
 }
